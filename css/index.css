@@ -1,25 +1,61 @@
+.page {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
 #mainContainer {
     display: flex;
     justify-content: center;
+}
 
+.menuList {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    column-gap: 30px;
+}
+
+.menuList li button{
+    color: whitesmoke;
+    background-color: rgb(56, 56, 56);
+    padding: 3px;
+    border: black 2px solid;
+    border-radius: 6px;
 }
 
 .blockContainer {
     display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    border: black solid 1px;
+    box-shadow: 0px 0px 10px;
+}
+
+.blockRow {
+    flex: 1 1 0;
+    display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 540px;
+    border: black solid 1px;
 }
 
 .blocks {
+    background-color: white;
     border: solid black 1px;
-    width: 30px;
-    height: 30px;
-
+    flex: 1 1 0;
+    /* width: 1px;
+    height: 1px; */
 }
 
 .blocks:hover {
     border-color: blueviolet;
     background-color: blueviolet;
+}
+
+.blockColor {
+    background-color: orange;
 }
